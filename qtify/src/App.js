@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import StyledEngineProvider from '@mui/material/StyledEngineProvider';
+import Navbar from "./components/Navbar/Navbar";
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello! This is React</h1>
-    </div>
+    <>
+      <StyledEngineProvider injectFirst>
+        <Navbar />
+      </StyledEngineProvider>
+    </>
   );
 }
 
