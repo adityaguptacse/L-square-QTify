@@ -7,7 +7,7 @@
 .search {
 
     height: 100%;
-    padding: 9px 20px;
+    padding: 10px 20px;
     border-radius: 8px 0px 0px 8px;
     width: 35vw;
 }
@@ -15,6 +15,6 @@
 .searchButton {
     border-radius: 0px 8px 8px 0px;
     height: 100%;
-    padding: 6px 19px;
+    padding: 6px 20px;
     border-left: none;
 }
