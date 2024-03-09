@@ -21,7 +21,8 @@ export default function SearchBox () {
                 justifyContent: "center",
                 alignItems: "center",
                 borderRadius: "0 8px 8px 0",
-                padding: "8px"
+                padding: "8px",
+                borderLeft: "none"
 
             }}>
                 <SearchIcon/>
