@@ -1,13 +1,13 @@
 import {ReactComponent as SearchIcon} from './search-icon.svg'
 
-export default function SearchBox () {
+export default function SearchBox ({placeholder}) {
     return(
         <form style={{
             display: "flex",
             minWidth: "570px"
         }}>
             <input 
-            placeholder='search an item of your choice'
+            placeholder={placeholder}
             style={{
                 flex: 1,
                 borderRadius: "8px 0 0 8px",

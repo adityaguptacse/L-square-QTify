@@ -8,7 +8,7 @@ export default function Navbar(){
         <div className="navbar">
             {/* <img src='logo.png' width={67} height={37} alt='logo'/> */}
             <Logo />
-            <SearchBox />
+            <SearchBox placeholder="search an item of your choice"/>
             <Button>Give Feedback</Button>
 
         </div>
