@@ -7,6 +7,7 @@ import Card from './Component/Card';
 import Section from './Component/Section'
 import FilterSection from './Component/FilterSection';
 import axios from 'axios';
+import {TopData} from './ApiData'
 
 const ENDPOINT = "https://qtify-backend-labs.crio.do/"
 
@@ -18,11 +19,19 @@ function App() {
   const [filteredSongs, setFilteredSongs] = useState([])
   const [genres, setGenres] = useState([])
 
+  console.log("Top Data", TopData)
+
   useEffect(()=>{
-    axios.get(`${ENDPOINT}albums/top`)
-      .then(({data}) =>{
-        setTopAlbums(data)
-      })
+    // axios.get(`${ENDPOINT}albums/top`)
+    //   .then(({data}) =>{
+    //     setTopAlbums(data)
+    //     console.log("Top Albums", data)
+    //   })
+
+    
+        setTopAlbums(TopData)
+        console.log("Top Albums", TopData)
+ 
 
       axios.get(`${ENDPOINT}albums/new`)
       .then((res) =>{

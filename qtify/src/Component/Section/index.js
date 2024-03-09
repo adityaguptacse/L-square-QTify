@@ -25,9 +25,6 @@ export default function Section({title, data}){
                         followersCount={cardData.follows}
 
                 />)}
-                
-              
-
 
             </div>}
         </div>
