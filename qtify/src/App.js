@@ -22,15 +22,15 @@ function App() {
   console.log("Top Data", TopData)
 
   useEffect(()=>{
-    // axios.get(`${ENDPOINT}albums/top`)
-    //   .then(({data}) =>{
-    //     setTopAlbums(data)
-    //     console.log("Top Albums", data)
-    //   })
+    axios.get(`${ENDPOINT}albums/top`)
+      .then(({data}) =>{
+        setTopAlbums(data)
+        console.log("Top Albums", data)
+      })
 
     
-        setTopAlbums(TopData)
-        console.log("Top Albums", TopData)
+        // setTopAlbums(TopData)
+        // console.log("Top Albums", TopData)
  
 
       axios.get(`${ENDPOINT}albums/new`)
