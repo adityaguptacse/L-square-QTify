@@ -5,12 +5,9 @@ import Carousel from '../Carousel'
 
 
 
-
-
-
 export default function Section({title, data}){
 
-    const [isCollapsed, setIsCollapsed] = useState(false)
+    const [isCollapsed, setIsCollapsed] = useState(true)
     return (
         <div className='section'>
             <div className='section-header'>
