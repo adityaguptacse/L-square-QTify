@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 
 
 
-export default function Carousel ({data}) {
+export default function Carousel ({data, navId}) {
     return(
         <div className='carousel-container'>
             <Swiper
@@ -19,14 +19,13 @@ export default function Carousel ({data}) {
             // onSwiper={setSwiperRef}
             slidesPerView={7}
             // centeredSlides={true}
-            spaceBetween={30}
+            // spaceBetween={30}
             // pagination={{
             //   type: 'fraction',
             // }}
             // navigation={true}
 
-            navigation = {{nextEl: ".arrow-left", prevEl: ".arrow-right"}}
-            virtual
+            navigation={{ nextEl: `.arrow-left-${navId}`, prevEl: `.arrow-right-${navId}` }}
             >
 
             {data.map(cardData =><SwiperSlide key={cardData.id}> <Card                      
@@ -36,8 +35,8 @@ export default function Carousel ({data}) {
             /> </SwiperSlide>)}  
             </Swiper>
 
-            <div className='arrow-left arrow'><img src='left.png' alt='left rarrow'/></div>
-            <div className='arrow-right arrow'><img src='right.png' alt='right-arrow'/></div>
+            <div className={`arrow-left-${navId} arrow-left arrow`}><img src='left.png' alt='left rarrow'/></div>
+            <div className={`arrow-right-${navId} arrow-right arrow`}><img src='right.png' alt='right-arrow'/></div>
 
       </div>
 

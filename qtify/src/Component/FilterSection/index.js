@@ -31,7 +31,7 @@ export default function FilterSection({ title, data, filters, executeFilter }) {
           <Tab  className="tab" lable={f.label} key={f.key} />
         ))}
       </Tabs>
-      <Carousel data={data} />
+      <Carousel data={data} navId='filter-genres'/>
     </div>
   );
 }

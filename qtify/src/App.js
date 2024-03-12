@@ -50,8 +50,8 @@ function App() {
     <div>
       <Navbar />  
       <HeroSection />
-      <Section title='Top Albums' data={ topAlbums}/>
-      <Section title='New Albums' data={ newAlbums}/>
+      <Section title='Top Albums' data={ topAlbums} navId='topalbum'/>
+      <Section title='New Albums' data={ newAlbums}navId='newalbum'/>
       <FilterSection title='Songs' data={ filteredSongs} filters={genres}
       executeFilter={(genre =>{
         if(genre === 'all') {
