@@ -17,7 +17,7 @@ export default function Carousel ({data}) {
             <Swiper
             modules={[Virtual, Navigation, Pagination]}
             // onSwiper={setSwiperRef}
-            slidesPerView={8}
+            slidesPerView={7}
             // centeredSlides={true}
             spaceBetween={30}
             // pagination={{

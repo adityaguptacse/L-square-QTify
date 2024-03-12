@@ -6,6 +6,7 @@ import Carousel from '../Carousel'
 
 
 export default function Section({title, data}){
+    console.log("data array", data)
 
     const [isCollapsed, setIsCollapsed] = useState(true)
     return (

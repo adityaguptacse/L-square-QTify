@@ -28,11 +28,6 @@ function App() {
         console.log("Top Albums", data)
       })
 
-    
-        // setTopAlbums(TopData)
-        // console.log("Top Albums", TopData)
- 
-
       axios.get(`${ENDPOINT}albums/new`)
       .then((res) =>{
         setNewAlbums(res.data)
